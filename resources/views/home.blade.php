@@ -45,9 +45,9 @@
 		<nav class="px-6 pb-6">
 			<ul class="space-y-6">
 				<li><a href="#" class="block font-medium text-base">Home</a></li>
-				<li><a href="#profil" class="block font-medium text-base">About</a></li>
+				<li><a href="/about" class="block font-medium text-base">About</a></li>
 				<li><a href="#layanan" class="block font-medium text-base">Layanan Kami</a></li>
-				<li><a href="#portofolio" class="block font-medium text-base">Portofolio</a></li>
+				<li><a href="/portofolio" class="block font-medium text-base">Portofolio</a></li>
 				<li><a href="#footer" class="block font-medium text-base">Kontak</a></li>
 			</ul>
 		</nav>
@@ -165,7 +165,7 @@
 	</section>
 
 	<!-- FOOTER -->
-	<footer class="bg-[#0f0f0f] border-t border-white/10">
+	<footer id="footer" class="bg-[#0f0f0f] border-t border-white/10">
 		<div class="max-w-7xl mx-auto px-6 py-12 md:py-16">
 			<div class="grid md:grid-cols-[auto_1fr] gap-10 md:gap-16 items-start">
 				<!-- Logo kiri -->
