@@ -71,75 +71,75 @@
 	</section>
 
     <!-- TEAM SLIDER -->
-    <section class="bg-[#111111]">
+    <section>
         <div class="max-w-7xl mx-auto px-6 pb-16 md:pb-20">
             <div class="overflow-x-hidden py-6 md:py-8">
-				<div id="teamTrack" class="flex gap-8 transition-transform duration-500">
+				<div id="teamTrack" class="flex gap-0 md:gap-8 transition-transform duration-500">
 					<!-- Slide 1 -->
-                    <div class="team-slide min-w-full grid md:grid-cols-3 items-center md:items-start gap-6 md:gap-8">
-                        <div class="team-card h-[360px] md:h-[400px] rounded-lg border border-white/20 overflow-hidden transform origin-center transition-transform duration-500 ease-out">
-                            <div class="bg-black/60 h-[160px] md:h-[200px] flex items-center justify-center">
+                    <div class="team-slide min-w-full grid md:grid-cols-3 items-center md:items-start gap-6 md:gap-8 px-4 md:px-8">
+                        <div class="team-card h-[360px] md:h-[400px] rounded-xl border border-white/20 ring-1 ring-white/20 shadow-xl shadow-black/40 overflow-hidden transform origin-center transition-transform duration-500 ease-out grid grid-rows-[auto_1fr]">
+                            <div class="bg-black h-[160px] md:h-[200px] flex items-center justify-center">
 								<!-- avatar icon -->
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="w-12 h-12 text-white/80"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 7.5a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.5 19.5a7.5 7.5 0 1 1 15 0v.75H4.5v-.75Z"/></svg>
 							</div>
-							<div class="bg-white/10 p-6">
-								<h3 class="text-xl font-semibold">Name</h3>
-								<p class="text-white/80">Position</p>
-								<p class="text-sm mt-3 text-white/70 leading-6">Description Description Description Description Description</p>
+                            <div class="bg-[#d9d9d9] p-6 h-full text-black">
+                                <h3 class="text-2xl md:text-3xl font-extrabold">Name</h3>
+                                <p class="text-black/70 font-semibold">Position</p>
+                                <p class="text-sm mt-3 text-black/70 leading-6">Description Description Description Description Description</p>
 							</div>
 						</div>
-                        <div class="team-card h-[400px] rounded-lg border border-white/20 overflow-hidden hidden md:block transform origin-center transition-transform duration-500 ease-out">
-                            <div class="bg-black/60 h-[200px] flex items-center justify-center">
+                        <div class="team-card h-[400px] rounded-xl border border-white/20 ring-1 ring-white/20 shadow-xl shadow-black/40 overflow-hidden hidden md:block transform origin-center transition-transform duration-500 ease-out grid grid-rows-[auto_1fr]">
+                            <div class="bg-black h-[200px] flex items-center justify-center">
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="w-12 h-12 text-white/80"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 7.5a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.5 19.5a7.5 7.5 0 1 1 15 0v.75H4.5v-.75Z"/></svg>
 							</div>
-							<div class="bg-white/10 p-6">
-								<h3 class="text-xl font-semibold">Name</h3>
-								<p class="text-white/80">Position</p>
-								<p class="text-sm mt-3 text-white/70 leading-6">Description Description Description Description Description</p>
+                            <div class="bg-[#d9d9d9] p-6 h-full text-black">
+                                <h3 class="text-2xl md:text-3xl font-extrabold">Name</h3>
+                                <p class="text-black/70 font-semibold">Position</p>
+                                <p class="text-sm mt-3 text-black/70 leading-6">Description Description Description Description Description</p>
 							</div>
 						</div>
-                        <div class="team-card h-[400px] rounded-lg border border-white/20 overflow-hidden hidden md:block transform origin-center transition-transform duration-500 ease-out">
-                            <div class="bg-black/60 h-[200px] flex items-center justify-center">
+                        <div class="team-card h-[400px] rounded-xl border border-white/20 ring-1 ring-white/20 shadow-xl shadow-black/40 overflow-hidden hidden md:block transform origin-center transition-transform duration-500 ease-out grid grid-rows-[auto_1fr]">
+                            <div class="bg-black h-[200px] flex items-center justify-center">
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="w-12 h-12 text-white/80"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 7.5a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.5 19.5a7.5 7.5 0 1 1 15 0v.75H4.5v-.75Z"/></svg>
 							</div>
-							<div class="bg-white/10 p-6">
-								<h3 class="text-xl font-semibold">Name</h3>
-								<p class="text-white/80">Position</p>
-								<p class="text-sm mt-3 text-white/70 leading-6">Description Description Description Description Description</p>
+                            <div class="bg-[#d9d9d9] p-6 h-full text-black">
+                                <h3 class="text-2xl md:text-3xl font-extrabold">Name</h3>
+                                <p class="text-black/70 font-semibold">Position</p>
+                                <p class="text-sm mt-3 text-black/70 leading-6">Description Description Description Description Description</p>
 							</div>
 						</div>
 					</div>
 
 					<!-- Slide 2 -->
-                    <div class="team-slide min-w-full grid md:grid-cols-3 items-center md:items-start gap-6 md:gap-8">
-                        <div class="team-card h-[360px] md:h-[400px] rounded-lg border border-white/20 overflow-hidden transform origin-center transition-transform duration-500 ease-out">
-                            <div class="bg-black/60 h-[160px] md:h-[200px] flex items-center justify-center">
+                    <div class="team-slide min-w-full grid md:grid-cols-3 items-center md:items-start gap-6 md:gap-8 px-4 md:px-8">
+                        <div class="team-card h-[360px] md:h-[400px] rounded-xl border border-white/20 ring-1 ring-white/20 shadow-xl shadow-black/40 overflow-hidden transform origin-center transition-transform duration-500 ease-out grid grid-rows-[auto_1fr]">
+                            <div class="bg-black h-[160px] md:h-[200px] flex items-center justify-center">
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="w-12 h-12 text-white/80"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 7.5a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.5 19.5a7.5 7.5 0 1 1 15 0v.75H4.5v-.75Z"/></svg>
 							</div>
-							<div class="bg-white/10 p-6">
-								<h3 class="text-xl font-semibold">Name</h3>
-								<p class="text-white/80">Position</p>
-								<p class="text-sm mt-3 text-white/70 leading-6">Description Description Description Description Description</p>
+                            <div class="bg-[#d9d9d9] p-6 h-full text-black">
+                                <h3 class="text-2xl md:text-3xl font-extrabold">Name</h3>
+                                <p class="text-black/70 font-semibold">Position</p>
+                                <p class="text-sm mt-3 text-black/70 leading-6">Description Description Description Description Description</p>
 							</div>
 						</div>
-                        <div class="team-card h-[400px] rounded-lg border border-white/20 overflow-hidden hidden md:block transform origin-center transition-transform duration-500 ease-out">
-                            <div class="bg-black/60 h-[200px] flex items-center justify-center">
+                        <div class="team-card h-[400px] rounded-xl border border-white/20 ring-1 ring-white/20 shadow-xl shadow-black/40 overflow-hidden hidden md:block transform origin-center transition-transform duration-500 ease-out grid grid-rows-[auto_1fr]">
+                            <div class="bg-black h-[200px] flex items-center justify-center">
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="w-12 h-12 text-white/80"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 7.5a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.5 19.5a7.5 7.5 0 1 1 15 0v.75H4.5v-.75Z"/></svg>
 							</div>
-							<div class="bg-white/10 p-6">
-								<h3 class="text-xl font-semibold">Name</h3>
-								<p class="text-white/80">Position</p>
-								<p class="text-sm mt-3 text-white/70 leading-6">Description Description Description Description Description</p>
+                            <div class="bg-[#d9d9d9] p-6 h-full text-black">
+                                <h3 class="text-2xl md:text-3xl font-extrabold">Name</h3>
+                                <p class="text-black/70 font-semibold">Position</p>
+                                <p class="text-sm mt-3 text-black/70 leading-6">Description Description Description Description Description</p>
 							</div>
 						</div>
-                        <div class="team-card h-[400px] rounded-lg border border-white/20 overflow-hidden hidden md:block transform origin-center transition-transform duration-500 ease-out">
-                            <div class="bg-black/60 h-[200px] flex items-center justify-center">
+                        <div class="team-card h-[400px] rounded-xl border border-white/20 ring-1 ring-white/20 shadow-xl shadow-black/40 overflow-hidden hidden md:block transform origin-center transition-transform duration-500 ease-out grid grid-rows-[auto_1fr]">
+                            <div class="bg-black h-[200px] flex items-center justify-center">
 								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="w-12 h-12 text-white/80"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 7.5a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.5 19.5a7.5 7.5 0 1 1 15 0v.75H4.5v-.75Z"/></svg>
 							</div>
-							<div class="bg-white/10 p-6">
-								<h3 class="text-xl font-semibold">Name</h3>
-								<p class="text-white/80">Position</p>
-								<p class="text-sm mt-3 text-white/70 leading-6">Description Description Description Description Description</p>
+                            <div class="bg-[#d9d9d9] p-6 h-full text-black">
+                                <h3 class="text-2xl md:text-3xl font-extrabold">Name</h3>
+                                <p class="text-black/70 font-semibold">Position</p>
+                                <p class="text-sm mt-3 text-black/70 leading-6">Description Description Description Description Description</p>
 							</div>
 						</div>
 					</div>
