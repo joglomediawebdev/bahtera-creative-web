@@ -70,86 +70,74 @@
 		</div>
 	</section>
 
-    <!-- TEAM SLIDER -->
-    <section>
-        <div class="max-w-7xl mx-auto px-6 pb-16 md:pb-20">
-            <div class="overflow-x-hidden py-6 md:py-8">
-				<div id="teamTrack" class="flex gap-0 md:gap-8 transition-transform duration-500">
-					<!-- Slide 1 -->
-                    <div class="team-slide min-w-full grid md:grid-cols-3 items-center md:items-start gap-6 md:gap-8 px-4 md:px-8">
-                        <div class="team-card h-[360px] md:h-[400px] rounded-xl border border-white/20 ring-1 ring-white/20 shadow-xl shadow-black/40 overflow-hidden transform origin-center transition-transform duration-500 ease-out grid grid-rows-[auto_1fr]">
-                            <div class="bg-black h-[160px] md:h-[200px] flex items-center justify-center">
-								<!-- avatar icon -->
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="w-12 h-12 text-white/80"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 7.5a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.5 19.5a7.5 7.5 0 1 1 15 0v.75H4.5v-.75Z"/></svg>
-							</div>
-                            <div class="bg-[#d9d9d9] p-6 h-full text-black">
-                                <h3 class="text-2xl md:text-3xl font-extrabold">Name</h3>
-                                <p class="text-black/70 font-semibold">Position</p>
-                                <p class="text-sm mt-3 text-black/70 leading-6">Description Description Description Description Description</p>
-							</div>
+	<!-- TEAM SLIDER -->
+	<section>
+		<div class="max-w-7xl mx-auto px-6 pb-16 md:pb-20">
+			<div class="overflow-x-hidden py-6 md:py-8">
+				<!-- Track -->
+				<div id="teamTrack" class="grid grid-flow-col auto-cols-[100%] md:auto-cols-[31.333%] gap-8">
+					
+					<!-- Card 1 -->
+					<div class="team-card rounded-xl border border-white/20 ring-1 ring-white/20 shadow-xl shadow-black/40 overflow-hidden grid grid-rows-[auto_1fr]">
+						<div class="bg-black h-[200px] md:h-[200px] flex items-center justify-center">
+							<svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-white/80" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 7.5a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.5 19.5a7.5 7.5 0 1 1 15 0v.75H4.5v-.75Z"/></svg>
 						</div>
-                        <div class="team-card h-[400px] rounded-xl border border-white/20 ring-1 ring-white/20 shadow-xl shadow-black/40 overflow-hidden hidden md:block transform origin-center transition-transform duration-500 ease-out grid grid-rows-[auto_1fr]">
-                            <div class="bg-black h-[200px] flex items-center justify-center">
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="w-12 h-12 text-white/80"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 7.5a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.5 19.5a7.5 7.5 0 1 1 15 0v.75H4.5v-.75Z"/></svg>
-							</div>
-                            <div class="bg-[#d9d9d9] p-6 h-full text-black">
-                                <h3 class="text-2xl md:text-3xl font-extrabold">Name</h3>
-                                <p class="text-black/70 font-semibold">Position</p>
-                                <p class="text-sm mt-3 text-black/70 leading-6">Description Description Description Description Description</p>
-							</div>
-						</div>
-                        <div class="team-card h-[400px] rounded-xl border border-white/20 ring-1 ring-white/20 shadow-xl shadow-black/40 overflow-hidden hidden md:block transform origin-center transition-transform duration-500 ease-out grid grid-rows-[auto_1fr]">
-                            <div class="bg-black h-[200px] flex items-center justify-center">
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="w-12 h-12 text-white/80"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 7.5a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.5 19.5a7.5 7.5 0 1 1 15 0v.75H4.5v-.75Z"/></svg>
-							</div>
-                            <div class="bg-[#d9d9d9] p-6 h-full text-black">
-                                <h3 class="text-2xl md:text-3xl font-extrabold">Name</h3>
-                                <p class="text-black/70 font-semibold">Position</p>
-                                <p class="text-sm mt-3 text-black/70 leading-6">Description Description Description Description Description</p>
-							</div>
+						<div class="bg-[#d9d9d9] p-6 h-full text-black">
+							<h3 class="text-2xl md:text-3xl font-extrabold">Name 1</h3>
+							<p class="text-black/70 font-semibold">Position</p>
+							<p class="text-sm mt-3 text-black/70 leading-6">Description Description Description</p>
 						</div>
 					</div>
 
-					<!-- Slide 2 -->
-                    <div class="team-slide min-w-full grid md:grid-cols-3 items-center md:items-start gap-6 md:gap-8 px-4 md:px-8">
-                        <div class="team-card h-[360px] md:h-[400px] rounded-xl border border-white/20 ring-1 ring-white/20 shadow-xl shadow-black/40 overflow-hidden transform origin-center transition-transform duration-500 ease-out grid grid-rows-[auto_1fr]">
-                            <div class="bg-black h-[160px] md:h-[200px] flex items-center justify-center">
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="w-12 h-12 text-white/80"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 7.5a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.5 19.5a7.5 7.5 0 1 1 15 0v.75H4.5v-.75Z"/></svg>
-							</div>
-                            <div class="bg-[#d9d9d9] p-6 h-full text-black">
-                                <h3 class="text-2xl md:text-3xl font-extrabold">Name</h3>
-                                <p class="text-black/70 font-semibold">Position</p>
-                                <p class="text-sm mt-3 text-black/70 leading-6">Description Description Description Description Description</p>
-							</div>
+					<!-- Card 2 -->
+					<div class="team-card rounded-xl border border-white/20 ring-1 ring-white/20 shadow-xl shadow-black/40 overflow-hidden grid grid-rows-[auto_1fr]">
+						<div class="bg-black h-[200px] flex items-center justify-center">
+							<svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-white/80" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 7.5a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.5 19.5a7.5 7.5 0 1 1 15 0v.75H4.5v-.75Z"/></svg>
 						</div>
-                        <div class="team-card h-[400px] rounded-xl border border-white/20 ring-1 ring-white/20 shadow-xl shadow-black/40 overflow-hidden hidden md:block transform origin-center transition-transform duration-500 ease-out grid grid-rows-[auto_1fr]">
-                            <div class="bg-black h-[200px] flex items-center justify-center">
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="w-12 h-12 text-white/80"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 7.5a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.5 19.5a7.5 7.5 0 1 1 15 0v.75H4.5v-.75Z"/></svg>
-							</div>
-                            <div class="bg-[#d9d9d9] p-6 h-full text-black">
-                                <h3 class="text-2xl md:text-3xl font-extrabold">Name</h3>
-                                <p class="text-black/70 font-semibold">Position</p>
-                                <p class="text-sm mt-3 text-black/70 leading-6">Description Description Description Description Description</p>
-							</div>
-						</div>
-                        <div class="team-card h-[400px] rounded-xl border border-white/20 ring-1 ring-white/20 shadow-xl shadow-black/40 overflow-hidden hidden md:block transform origin-center transition-transform duration-500 ease-out grid grid-rows-[auto_1fr]">
-                            <div class="bg-black h-[200px] flex items-center justify-center">
-								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="w-12 h-12 text-white/80"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 7.5a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.5 19.5a7.5 7.5 0 1 1 15 0v.75H4.5v-.75Z"/></svg>
-							</div>
-                            <div class="bg-[#d9d9d9] p-6 h-full text-black">
-                                <h3 class="text-2xl md:text-3xl font-extrabold">Name</h3>
-                                <p class="text-black/70 font-semibold">Position</p>
-                                <p class="text-sm mt-3 text-black/70 leading-6">Description Description Description Description Description</p>
-							</div>
+						<div class="bg-[#d9d9d9] p-6 h-full text-black">
+							<h3 class="text-2xl md:text-3xl font-extrabold">Name 2</h3>
+							<p class="text-black/70 font-semibold">Position</p>
+							<p class="text-sm mt-3 text-black/70 leading-6">Description Description Description</p>
 						</div>
 					</div>
+
+					<!-- Card 3 -->
+					<div class="team-card rounded-xl border border-white/20 ring-1 ring-white/20 shadow-xl shadow-black/40 overflow-hidden grid grid-rows-[auto_1fr]">
+						<div class="bg-black h-[200px] flex items-center justify-center">
+							<svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-white/80" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 7.5a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.5 19.5a7.5 7.5 0 1 1 15 0v.75H4.5v-.75Z"/></svg>
+						</div>
+						<div class="bg-[#d9d9d9] p-6 h-full text-black">
+							<h3 class="text-2xl md:text-3xl font-extrabold">Name 3</h3>
+							<p class="text-black/70 font-semibold">Position</p>
+							<p class="text-sm mt-3 text-black/70 leading-6">Description Description Description</p>
+						</div>
+					</div>
+
+					<!-- Card 4 -->
+					<div class="team-card rounded-xl border border-white/20 ring-1 ring-white/20 shadow-xl shadow-black/40 overflow-hidden grid grid-rows-[auto_1fr]">
+						<div class="bg-black h-[200px] flex items-center justify-center">
+							<svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-white/80" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 7.5a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.5 19.5a7.5 7.5 0 1 1 15 0v.75H4.5v-.75Z"/></svg>
+						</div>
+						<div class="bg-[#d9d9d9] p-6 h-full text-black">
+							<h3 class="text-2xl md:text-3xl font-extrabold">Name 4</h3>
+							<p class="text-black/70 font-semibold">Position</p>
+							<p class="text-sm mt-3 text-black/70 leading-6">Description Description Description</p>
+						</div>
+					</div>
+
+					<!-- Card 5 -->
+					<div class="team-card rounded-xl border border-white/20 ring-1 ring-white/20 shadow-xl shadow-black/40 overflow-hidden grid grid-rows-[auto_1fr]">
+						<div class="bg-black h-[200px] flex items-center justify-center">
+							<svg xmlns="http://www.w3.org/2000/svg" class="w-12 h-12 text-white/80" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 7.5a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.5 19.5a7.5 7.5 0 1 1 15 0v.75H4.5v-.75Z"/></svg>
+						</div>
+						<div class="bg-[#d9d9d9] p-6 h-full text-black">
+							<h3 class="text-2xl md:text-3xl font-extrabold">Name 5</h3>
+							<p class="text-black/70 font-semibold">Position</p>
+							<p class="text-sm mt-3 text-black/70 leading-6">Description Description Description</p>
+						</div>
+					</div>
+
 				</div>
-			</div>
-
-			<!-- Dots -->
-			<div class="mt-6 flex items-center justify-center gap-3">
-				<button class="team-dot w-2.5 h-2.5 rounded-full bg-white/40" aria-label="Slide 1"></button>
-				<button class="team-dot w-2.5 h-2.5 rounded-full bg-white/20" aria-label="Slide 2"></button>
 			</div>
 		</div>
 	</section>
@@ -157,42 +145,37 @@
 	<script>
 		(function(){
 			var track = document.getElementById('teamTrack');
-			var dots = Array.from(document.querySelectorAll('.team-dot'));
-			var cards = Array.from(document.querySelectorAll('.team-card'));
-			var active = 0;
-			var timer = null;
+			var interval = null;
 
-			function applyScale(){
-				cards.forEach(function(card){
-					card.style.transform = (window.innerWidth >= 768 ? 'scale(0.96)' : 'scale(1)');
-					card.style.boxShadow = 'none';
-					card.style.borderColor = 'rgba(255,255,255,0.2)';
-				});
-				var startIndex = active * 3; // 3 cards per slide pada layar md ke atas
-				var targetIndex = startIndex + (window.innerWidth >= 768 ? 1 : 0);
-				if(cards[targetIndex]){
-					cards[targetIndex].style.transform = (window.innerWidth >= 768 ? 'scale(1.05)' : 'scale(1.02)');
-					cards[targetIndex].style.boxShadow = '0 10px 30px rgba(0,0,0,0.35)';
-					cards[targetIndex].style.borderColor = 'rgba(255,255,255,0.35)';
-				}
+			function getShift(){
+				var first = track.children[0];
+				if(!first) return 0;
+				var rect = first.getBoundingClientRect();
+				var style = window.getComputedStyle(track);
+				var gap = parseFloat(style.columnGap || style.gap || '0') || 0;
+				return rect.width + gap;
 			}
 
-			function update(){
-				track.style.transform = 'translateX(' + (-active * 100) + '%)';
-				dots.forEach(function(d,i){ d.className = 'team-dot w-2.5 h-2.5 rounded-full ' + (i===active ? 'bg-white' : 'bg-white/30'); });
-				applyScale();
+			function step(){
+				var shift = getShift();
+				track.style.transition = 'transform 600ms ease';
+				track.style.transform = 'translateX(' + (-shift) + 'px)';
+				var onEnd = function(){
+					track.style.transition = 'none';
+					track.style.transform = 'translateX(0)';
+					if(track.children.length){ track.appendChild(track.children[0]); }
+					track.removeEventListener('transitionend', onEnd);
+				};
+				track.addEventListener('transitionend', onEnd);
 			}
 
-			function next(){ active = (active + 1) % dots.length; update(); }
-			function start(){ stop(); timer = setInterval(next, 2000); }
-			function stop(){ if(timer){ clearInterval(timer); timer = null; } }
+			function start(){ stop(); interval = setInterval(step, 2500); }
+			function stop(){ if(interval){ clearInterval(interval); interval = null; } }
 
-			dots.forEach(function(d,i){ d.addEventListener('click', function(){ active = i; update(); start(); }); });
-			var sliderRoot = track.parentElement; // overflow-hidden wrapper
-			sliderRoot.addEventListener('mouseenter', stop);
-			sliderRoot.addEventListener('mouseleave', start);
+			var wrapper = track.parentElement;
+			wrapper.addEventListener('mouseenter', stop);
+			wrapper.addEventListener('mouseleave', start);
 
-			update();
 			start();
 		})();
 	</script>
@@ -220,9 +203,9 @@
 					<div>
 						<p class="text-white/60">Sosial Media</p>
 						<div class="mt-2 flex items-center gap-4">
-							<img src="{{ asset('img/wa.png') }}" alt="WhatsApp" class="h-6 w-6 object-contain">
-							<img src="{{ asset('img/ig.png') }}" alt="Instagram" class="h-6 w-6 object-contain">
-							<img src="{{ asset('img/tt.png') }}" alt="TikTok" class="h-6 w-6 object-contain">
+							<a href="#" target="_blank"><img src="{{ asset('img/wa.png') }}" alt="WhatsApp" class="h-6 w-6 object-contain"></a>
+							<a href="#" target="_blank"><img src="{{ asset('img/ig.png') }}" alt="Instagram" class="h-6 w-6 object-contain"></a>
+							<a href="#" target="_blank"><img src="{{ asset('img/tt.png') }}" alt="TikTok" class="h-6 w-6 object-contain"></a>
 						</div>
 					</div>
 				</div>
@@ -233,3 +216,5 @@
 	</footer>
 </body>
 </html>
+
+

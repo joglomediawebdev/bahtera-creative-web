@@ -11,6 +11,16 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 	<style>
 		body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; }
+
+		/* Our Client marquee animation */
+		@keyframes marquee-left {
+			0% { transform: translateX(0); }
+			100% { transform: translateX(-50%); }
+		}
+		.client-marquee { animation: marquee-left 36s linear infinite; will-change: transform; }
+		@media (prefers-reduced-motion: reduce) {
+			.client-marquee { animation: none; }
+		}
 	</style>
 </head>
 <body class="bg-black text-white">
@@ -79,7 +89,7 @@
 
 	<!-- HERO / WELCOME -->
 	<section class="relative">
-		<div class="relative max-w-7xl mx-auto px-6 pt-16 pb-24 md:pt-24 md:pb-32 flex flex-col items-center text-center">
+		<div class="relative max-w-7xl mx-auto px-6 pt-16 pb-24 md:pt-48 md:pb-56 flex flex-col items-center text-center">
 			<!-- Background splash behind text -->
 			<img src="{{ asset('img/abstract_splash.png') }}" alt="Welcome Graphic" class="pointer-events-none select-none absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 w-[860px] max-w-[92vw] -z-10" draggable="false">
 			<h1 class="text-3xl md:text-4xl lg:text-5xl font-extrabold">Welcome to Bahtera Creative</h1>
@@ -137,10 +147,29 @@
 	<section id="client" class="bg-[#181818]">
 		<div class="max-w-7xl mx-auto px-6 py-16 md:py-20">
 			<h3 class="text-center text-2xl font-semibold">Our Client</h3>
-			<div class="mt-10 grid grid-cols-3 gap-6 max-w-xl mx-auto">
-				<img src="{{ asset('img/bag.png') }}" alt="Client 1" class="h-12 md:h-14 object-contain mx-auto">
-				<img src="{{ asset('img/trolly.png') }}" alt="Client 2" class="h-12 md:h-14 object-contain mx-auto">
-				<img src="{{ asset('img/camera.png') }}" alt="Client 3" class="h-12 md:h-14 object-contain mx-auto">
+			<div class="mt-10 overflow-hidden">
+				<!-- Marquee track: duplicate content for seamless loop -->
+				<div class="flex items-center gap-12 client-marquee">
+					<!-- set 1 -->
+					<div class="flex items-center gap-12 shrink-0 pr-12">
+						<img src="{{ asset('img/bag.png') }}" alt="Client 1" class="h-12 md:h-14 object-contain">
+						<img src="{{ asset('img/trolly.png') }}" alt="Client 2" class="h-12 md:h-14 object-contain">
+						<img src="{{ asset('img/camera.png') }}" alt="Client 3" class="h-12 md:h-14 object-contain">
+						<img src="{{ asset('img/bag.png') }}" alt="Client 4" class="h-12 md:h-14 object-contain">
+						<img src="{{ asset('img/trolly.png') }}" alt="Client 5" class="h-12 md:h-14 object-contain">
+						<img src="{{ asset('img/camera.png') }}" alt="Client 6" class="h-12 md:h-14 object-contain">
+						<img src="{{ asset('img/bag.png') }}" alt="Client 7" class="h-12 md:h-14 object-contain">
+						<img src="{{ asset('img/trolly.png') }}" alt="Client 8" class="h-12 md:h-14 object-contain">
+						<img src="{{ asset('img/bag.png') }}" alt="" class="h-12 md:h-14 object-contain">
+						<img src="{{ asset('img/trolly.png') }}" alt="" class="h-12 md:h-14 object-contain">
+						<img src="{{ asset('img/camera.png') }}" alt="" class="h-12 md:h-14 object-contain">
+						<img src="{{ asset('img/bag.png') }}" alt="" class="h-12 md:h-14 object-contain">
+						<img src="{{ asset('img/trolly.png') }}" alt="" class="h-12 md:h-14 object-contain">
+						<img src="{{ asset('img/camera.png') }}" alt="" class="h-12 md:h-14 object-contain">
+						<img src="{{ asset('img/bag.png') }}" alt="" class="h-12 md:h-14 object-contain">
+						<img src="{{ asset('img/trolly.png') }}" alt="" class="h-12 md:h-14 object-contain">
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -159,7 +188,7 @@
 				</div>
 			</div>
 			<div class="mt-10 flex">
-				<a href="#" class="mx-auto inline-flex items-center justify-center rounded-full border border-white/30 bg-white/10 hover:bg-white/20 transition px-6 py-3 text-sm md:text-base">Lihat Selengkapnya</a>
+				<a href="/portofolio" class="mx-auto inline-flex items-center justify-center rounded-full border border-white/30 bg-white/10 hover:bg-white/20 transition px-6 py-3 text-sm md:text-base">Lihat Selengkapnya</a>
 			</div>
 		</div>
 	</section>
@@ -189,9 +218,20 @@
 					<div>
 						<p class="text-white/60">Sosial Media</p>
 						<div class="mt-2 flex items-center gap-4">
-							<img src="{{ asset('img/wa.png') }}" alt="WhatsApp" class="h-6 w-6 object-contain">
-							<img src="{{ asset('img/ig.png') }}" alt="Instagram" class="h-6 w-6 object-contain">
-							<img src="{{ asset('img/tt.png') }}" alt="TikTok" class="h-6 w-6 object-contain">
+							<!-- WhatsApp -->
+							<a href="#" target="_blank" rel="noopener noreferrer">
+								<img src="{{ asset('img/wa.png') }}" alt="WhatsApp" class="h-6 w-6 object-contain hover:scale-110 transition">
+							</a>
+
+							<!-- Instagram -->
+							<a href="#" target="_blank" rel="noopener noreferrer">
+								<img src="{{ asset('img/ig.png') }}" alt="Instagram" class="h-6 w-6 object-contain hover:scale-110 transition">
+							</a>
+
+							<!-- TikTok -->
+							<a href="#" target="_blank" rel="noopener noreferrer">
+								<img src="{{ asset('img/tt.png') }}" alt="TikTok" class="h-6 w-6 object-contain hover:scale-110 transition">
+							</a>
 						</div>
 					</div>
 				</div>
