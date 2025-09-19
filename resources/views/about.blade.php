@@ -10,6 +10,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 	<style>
 		body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; }
+		.reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease; }
+  		.reveal.active { opacity: 1; transform: translateY(0); }
 	</style>
 </head>
 <body class="bg-black text-white">
@@ -72,7 +74,7 @@
 
 	<!-- PROFIL BISNIS -->
 	<section id="profil">
-		<div class="max-w-7xl mx-auto px-6 py-14 md:py-20 grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+		<div class="max-w-7xl mx-auto px-6 py-14 md:py-20 grid md:grid-cols-2 gap-10 md:gap-16 items-center reveal">
 			<div>
 				<h2 class="text-2xl md:text-3xl font-extrabold mb-5">Profil Bisnis</h2>
 				<p class="text-sm md:text-base leading-6 md:leading-7 text-white/85">
@@ -88,10 +90,10 @@
 
 	<!-- TEAM SLIDER -->
 	<section>
-		<div class="relative max-w-7xl mx-auto px-6 pt-12 pb-6 md:pt-16 md:pb-8 text-center">
+		<div class="relative max-w-7xl mx-auto px-6 pt-12 pb-6 md:pt-16 md:pb-8 text-center reveal">
 			<h1 class="text-3xl md:text-4xl font-extrabold">Team</h1>
 		</div>
-		<div class="max-w-7xl mx-auto px-6 pb-16 md:pb-20">
+		<div class="max-w-7xl mx-auto px-6 pb-16 md:pb-20 reveal">
 			<div class="overflow-x-hidden py-6 md:py-8">
 				<!-- Track -->
 				<div id="teamTrack" class="grid grid-flow-col auto-cols-[100%] md:auto-cols-[31.333%] gap-8">
@@ -233,6 +235,23 @@
 			<p class="text-center text-white/40 text-sm mt-6">© {{ date('Y') }} Bahtera Creative</p>
 		</div>
 	</footer>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const reveals = document.querySelectorAll(".reveal");
+			const observer = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+				entry.target.classList.add("active");
+				observer.unobserve(entry.target); // animasi hanya sekali
+				}
+			});
+			}, { threshold: 0.15 });
+
+			reveals.forEach(r => observer.observe(r));
+		});
+	</script>
+
 </body>
 </html>
 

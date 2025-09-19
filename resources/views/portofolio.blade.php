@@ -11,6 +11,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 	<style>
 		body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; }
+		.reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease; }
+		.reveal.active { opacity: 1; transform: translateY(0); }
 	</style>
 </head>
 <body class="bg-black text-white">
@@ -74,7 +76,7 @@
 	</script>
 
 	<!-- PAGE HEADER -->
-	<section class="relative">
+	<section class="relative reveal">
 		<div class="relative max-w-7xl mx-auto px-6 pt-10 pb-10 md:pt-14 md:pb-12 flex flex-col items-center text-center">
 			<h1 class="text-2xl md:text-3xl font-extrabold">Our
 				<span class="block">Project Showcases</span>
@@ -91,7 +93,7 @@
 
 	<!-- LIST PORTFOLIO -->
 	<section>
-		<div class="max-w-7xl mx-auto px-6 pb-16 md:pb-20 space-y-8">
+		<div class="max-w-7xl mx-auto px-6 pb-16 md:pb-20 space-y-8 reveal">
 			<!-- Card 1 -->
 			<article class="rounded-lg overflow-hidden shadow-[0_2px_0_0_rgba(255,255,255,0.06)] bg-[#151515]" data-category="logo">
 				<div class="grid md:grid-cols-[1fr_1fr]">
@@ -190,6 +192,22 @@
 					btn.classList.add("bg-white/30");
 				});
 			});
+		});
+	</script>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const reveals = document.querySelectorAll(".reveal");
+			const observer = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+				entry.target.classList.add("active");
+				observer.unobserve(entry.target); // animasi hanya sekali
+				}
+			});
+			}, { threshold: 0.15 });
+
+			reveals.forEach(r => observer.observe(r));
 		});
 	</script>
 </body>

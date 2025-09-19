@@ -21,6 +21,9 @@
 		@media (prefers-reduced-motion: reduce) {
 			.client-marquee { animation: none; }
 		}
+
+		.reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease; }
+  		.reveal.active { opacity: 1; transform: translateY(0); }
 	</style>
 </head>
 <body class="bg-black text-white">
@@ -103,7 +106,7 @@
 	<!-- PROFIL BISNIS -->
 	<section id="profil" class="bg-[#181818]">
 		<div class="max-w-7xl mx-auto px-6 py-14 md:py-20 grid md:grid-cols-2 gap-10 md:gap-16 items-center">
-			<div>
+			<div class="reveal">
 				<h2 class="text-2xl md:text-3xl font-extrabold mb-5">Profil Bisnis</h2>
 				<p class="text-sm md:text-base leading-6 md:leading-7 text-white/85">
 					Bahtera Creative adalah sebuah agency yang berada di Kota Sleman kami menyukai produk UMKM dan Branding. Pengalaman kami dalam jasa branding seperti pembuatan logo, packaging, content sosial media dan jasa konsultasi mengenai branding sebuah perusahaan atau produk ukm telah menimbulkan rasa ingin mengembangkan dan membantu ukm yang belum tau akan branding secara digital. Tim creative kami selalu mencari ide yang terbaik sehingga banyak perusahaan dan sektor ukm yang terbantu dan berhasil mencapai hasil yang diinginkan setelah kami bantu dalam hal rebranding.
@@ -117,34 +120,46 @@
 	</section>
 
 	<!-- LAYANAN -->
-	<section id="layanan" class="bg-[#111111]">
+	<section id="layanan" class="bg-[#111111] reveal">
 		<div class="max-w-7xl mx-auto px-6 py-16 md:py-20">
 			<h2 class="text-center text-2xl md:text-3xl font-extrabold">Layanan Bahtera Creative</h2>
 			<div class="mt-12 grid md:grid-cols-3 gap-10 md:gap-12">
 				<!-- Item 1 -->
 				<div class="text-center">
-					<img src="{{ asset('img/brand.png') }}" alt="Brand Identity" class="w-30 h-23 mx-auto object-contain">
+					<img src="{{ asset('img/brand.png') }}" 
+						alt="Brand Identity" 
+						class="w-30 h-23 mx-auto object-contain transition-transform duration-500 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl">
 					<h3 class="mt-6 text-xl font-semibold">Brand Identity</h3>
-					<p class="mt-3 text-white/85 text-sm leading-6 max-w-xs mx-auto">Layanan brand identity meliputi desain logo, strategi branding, dan kebutuhan branding untuk membuat identitas bisnis menjadi unik yang mempresentasikan value dan nilai bisnismu.</p>
+					<p class="mt-3 text-white/85 text-sm leading-6 max-w-xs mx-auto">
+						Layanan brand identity meliputi desain logo, strategi branding, dan kebutuhan branding untuk membuat identitas bisnis menjadi unik yang mempresentasikan value dan nilai bisnismu.
+					</p>
 				</div>
 				<!-- Item 2 -->
 				<div class="text-center">
-					<img src="{{ asset('img/socialmedia.png') }}" alt="Social Management" class="w-30 h-23 mx-auto object-contain">
+					<img src="{{ asset('img/socialmedia.png') }}" 
+						alt="Social Management" 
+						class="w-30 h-23 mx-auto object-contain transition-transform duration-500 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl">
 					<h3 class="mt-6 text-xl font-semibold">Social Mangement</h3>
-					<p class="mt-3 text-white/85 text-sm leading-6 max-w-xs mx-auto">kami juga melayani jasa pengelolaan akun sosial media Anda untuk meningkatkan bisnis anda di era digital dan dunia online saat ini.</p>
+					<p class="mt-3 text-white/85 text-sm leading-6 max-w-xs mx-auto">
+						kami juga melayani jasa pengelolaan akun sosial media Anda untuk meningkatkan bisnis anda di era digital dan dunia online saat ini.
+					</p>
 				</div>
 				<!-- Item 3 -->
 				<div class="text-center">
-					<img src="{{ asset('img/graphicdesign.png') }}" alt="Design Graphic" class="w-30 h-23 mx-auto object-contain">
+					<img src="{{ asset('img/graphicdesign.png') }}" 
+						alt="Design Graphic" 
+						class="w-30 h-23 mx-auto object-contain transition-transform duration-500 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl">
 					<h3 class="mt-6 text-xl font-semibold">Design Graphic</h3>
-					<p class="mt-3 text-white/85 text-sm leading-6 max-w-xs mx-auto">kami juga melayani desain grafis dari desain poster, desain banner, desain packaging dan keperluan desain grafis lainnya.</p>
+					<p class="mt-3 text-white/85 text-sm leading-6 max-w-xs mx-auto">
+						kami juga melayani desain grafis dari desain poster, desain banner, desain packaging dan keperluan desain grafis lainnya.
+					</p>
 				</div>
 			</div>
 		</div>
 	</section>
 
 	<!-- OUR CLIENT (terpisah, bg sama dengan profil) -->
-	<section id="client" class="bg-[#181818]">
+	<section id="client" class="bg-[#181818] reveal">
 		<div class="max-w-7xl mx-auto px-6 py-16 md:py-20">
 			<h3 class="text-center text-2xl font-semibold">Our Client</h3>
 			<div class="mt-10 overflow-hidden">
@@ -175,16 +190,24 @@
 	</section>
 
 	<!-- PORTOFOLIO -->
-	<section id="portofolio" class="bg-[#111111] border-t border-white/10">
+	<section id="portofolio" class="bg-[#111111] border-t border-white/10 reveal">
 		<div class="max-w-7xl mx-auto px-6 py-16 md:py-20">
 			<h2 class="text-center text-2xl md:text-3xl font-extrabold">Portofolio Bahtera Creative</h2>
 			<div class="mt-12 grid md:grid-cols-2 gap-8">
 				<!-- besar kiri -->
-				<img src="{{ asset('img/portfolio1.png') }}" alt="Portofolio 1" class="w-full h-full object-cover rounded">
+				<img src="{{ asset('img/portfolio1.png') }}" 
+					alt="Portofolio 1" 
+					class="w-full h-full object-cover rounded transition-transform duration-500 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl">
+
 				<!-- dua kecil kanan -->
 				<div class="grid gap-8">
-					<img src="{{ asset('img/portfolio2.png') }}" alt="Portofolio 2" class="w-full aspect-[4/3] object-cover rounded">
-					<img src="{{ asset('img/portfolio3.png') }}" alt="Portofolio 3" class="w-full aspect-[4/3] object-cover rounded">
+					<img src="{{ asset('img/portfolio2.png') }}" 
+						alt="Portofolio 2" 
+						class="w-full aspect-[4/3] object-cover rounded transition-transform duration-500 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl">
+					
+					<img src="{{ asset('img/portfolio3.png') }}" 
+						alt="Portofolio 3" 
+						class="w-full aspect-[4/3] object-cover rounded transition-transform duration-500 hover:scale-105 hover:-translate-y-2 hover:shadow-2xl">
 				</div>
 			</div>
 			<div class="mt-10 flex">
@@ -240,5 +263,21 @@
 			<p class="text-center text-white/40 text-sm mt-6">© {{ date('Y') }} Bahtera Creative</p>
 		</div>
 	</footer>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", () => {
+			const reveals = document.querySelectorAll(".reveal");
+			const observer = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+				if (entry.isIntersecting) {
+				entry.target.classList.add("active");
+				observer.unobserve(entry.target); // animasi hanya sekali
+				}
+			});
+			}, { threshold: 0.15 });
+
+			reveals.forEach(r => observer.observe(r));
+		});
+	</script>
 </body>
 </html>
