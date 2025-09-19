@@ -66,12 +66,31 @@
 	<!-- HEADER -->
 	<section class="relative">
 		<div class="relative max-w-7xl mx-auto px-6 pt-12 pb-6 md:pt-16 md:pb-8 text-center">
-			<h1 class="text-3xl md:text-4xl font-extrabold">Teams</h1>
+			<h1 class="text-3xl md:text-4xl font-extrabold">About</h1>
+		</div>
+	</section>
+
+	<!-- PROFIL BISNIS -->
+	<section id="profil">
+		<div class="max-w-7xl mx-auto px-6 py-14 md:py-20 grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+			<div>
+				<h2 class="text-2xl md:text-3xl font-extrabold mb-5">Profil Bisnis</h2>
+				<p class="text-sm md:text-base leading-6 md:leading-7 text-white/85">
+					Bahtera Creative adalah sebuah agency yang berada di Kota Sleman kami menyukai produk UMKM dan Branding. Pengalaman kami dalam jasa branding seperti pembuatan logo, packaging, content sosial media dan jasa konsultasi mengenai branding sebuah perusahaan atau produk ukm telah menimbulkan rasa ingin mengembangkan dan membantu ukm yang belum tau akan branding secara digital. Tim creative kami selalu mencari ide yang terbaik sehingga banyak perusahaan dan sektor ukm yang terbantu dan berhasil mencapai hasil yang diinginkan setelah kami bantu dalam hal rebranding.
+				</p>
+			</div>
+			<div class="flex justify-center">
+				<!-- Gambar profil, ganti file ini di public/img/profil-bisnis.png -->
+				<img src="{{ asset('img/bahtera.png') }}" alt="Profil Bisnis" class="w-[340px] h-[420px] object-cover bg-white/5 rounded">
+			</div>
 		</div>
 	</section>
 
 	<!-- TEAM SLIDER -->
 	<section>
+		<div class="relative max-w-7xl mx-auto px-6 pt-12 pb-6 md:pt-16 md:pb-8 text-center">
+			<h1 class="text-3xl md:text-4xl font-extrabold">Team</h1>
+		</div>
 		<div class="max-w-7xl mx-auto px-6 pb-16 md:pb-20">
 			<div class="overflow-x-hidden py-6 md:py-8">
 				<!-- Track -->

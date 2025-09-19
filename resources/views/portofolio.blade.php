@@ -81,10 +81,10 @@
 			</h1>
 			<!-- Filter chips -->
 			<div class="mt-6 flex flex-wrap items-center justify-center gap-3">
-				<button class="px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-sm hover:bg-white/15">Logo</button>
-				<button class="px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-sm hover:bg-white/15">Poster</button>
-				<button class="px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-sm hover:bg-white/15">Social Media</button>
-				<button class="px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-sm hover:bg-white/15">Logo</button>
+				<button class="filter-btn px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-sm hover:bg-white/15" data-filter="all">All</button>
+				<button class="filter-btn px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-sm hover:bg-white/15" data-filter="logo">Logo</button>
+				<button class="filter-btn px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-sm hover:bg-white/15" data-filter="poster">Poster</button>
+				<button class="filter-btn px-4 py-1.5 rounded-full bg-white/10 border border-white/20 text-sm hover:bg-white/15" data-filter="social-media">Social Media</button>
 			</div>
 		</div>
 	</section>
@@ -93,7 +93,7 @@
 	<section>
 		<div class="max-w-7xl mx-auto px-6 pb-16 md:pb-20 space-y-8">
 			<!-- Card 1 -->
-			<article class="rounded-lg overflow-hidden shadow-[0_2px_0_0_rgba(255,255,255,0.06)] bg-[#151515]">
+			<article class="rounded-lg overflow-hidden shadow-[0_2px_0_0_rgba(255,255,255,0.06)] bg-[#151515]" data-category="logo">
 				<div class="grid md:grid-cols-[1fr_1fr]">
 					<div class="relative min-h-[180px] h-full">
 						<img src="{{ asset('img/portfolio1.png') }}" alt="Project 1" class="w-full h-full object-cover">
@@ -106,7 +106,7 @@
 			</article>
 
 			<!-- Card 2 -->
-			<article class="rounded-lg overflow-hidden shadow-[0_2px_0_0_rgba(255,255,255,0.06)] bg-[#151515]">
+			<article class="rounded-lg overflow-hidden shadow-[0_2px_0_0_rgba(255,255,255,0.06)] bg-[#151515]" data-category="poster">
 				<div class="grid md:grid-cols-[1fr_1fr]">
 					<div class="bg-white/10 p-6 order-2 md:order-1">
 						<h3 class="text-base md:text-lg font-semibold">Title</h3>
@@ -119,7 +119,7 @@
 			</article>
 
 			<!-- Card 3 -->
-			<article class="rounded-lg overflow-hidden shadow-[0_2px_0_0_rgba(255,255,255,0.06)] bg-[#151515]">
+			<article class="rounded-lg overflow-hidden shadow-[0_2px_0_0_rgba(255,255,255,0.06)] bg-[#151515]" data-category="social-media">
 				<div class="grid md:grid-cols-[1fr_1fr]">
 					<div class="p-0 flex items-center justify-center min-h-[180px]">
 						<img src="{{ asset('img/portfolio3.png') }}" alt="Project 3" class="w-full object-cover">
@@ -167,5 +167,30 @@
 			<p class="text-center text-white/40 text-sm mt-6">© {{ date('Y') }} Bahtera Creative</p>
 		</div>
 	</footer>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const buttons = document.querySelectorAll(".filter-btn");
+			const cards = document.querySelectorAll("article[data-category]");
+
+			buttons.forEach(btn => {
+				btn.addEventListener("click", () => {
+					const filter = btn.getAttribute("data-filter");
+
+					cards.forEach(card => {
+						const category = card.getAttribute("data-category");
+						if (filter === "all" || category === filter) {
+							card.style.display = "block"; // tampilkan
+						} else {
+							card.style.display = "none"; // sembunyikan
+						}
+					});
+
+					// highlight tombol aktif
+					buttons.forEach(b => b.classList.remove("bg-white/30"));
+					btn.classList.add("bg-white/30");
+				});
+			});
+		});
+	</script>
 </body>
 </html>
